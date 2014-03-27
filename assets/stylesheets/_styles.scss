@@ -6,13 +6,18 @@
   transform: translateY(-50%); }
 
 .page-title {
-  margin-top:5%;
+  color: rgb(127, 177, 240);
+  margin-top:2%;
   line-height:70%;
   small {
+    font:{
+      style: italic;
+      weight:normal; }
     line-height:90%;
     padding:0 1%; } }
 
-.squares-container {}
+.squares-container {
+  margin-top: -5%; }
 
 .squares {
   @include border-radius(3px);
