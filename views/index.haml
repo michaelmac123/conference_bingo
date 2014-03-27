@@ -1,0 +1,20 @@
+.row
+  .squares-container.large-12.columns
+    %a#clearAll.clear-btn.button{ href: "#" } Reset All
+    .squares.large-12.columns
+      %ul.squares-head.small-block-grid-5.text-center
+        %li
+          %p B
+        %li
+          %p I
+        %li
+          %p N
+        %li
+          %p G
+        %li
+          %p O
+      - @card.grid.each do |row|
+        %ul.squares-body.spaces.small-block-grid-5.text-center
+          - row.each_with_index do |column, idx|
+            %li
+              %p= column

@@ -1,0 +1,21 @@
+!!!
+%html.no-js{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title Conference Call Bingo
+    %link{href: "css/app.css", rel: "stylesheet"}/
+    = js :head
+
+  %body
+    .row
+      .large-12.columns
+        %h1.page-title
+          Conference Call Bingo
+          %br/
+          %small Work shall take a backseat
+    = yield
+    .row.footer
+      .large-12.columns
+        %p.text-center= copyright
+    = js :tail

@@ -1,0 +1,13 @@
+development: &common_settings
+  title: Sinatra Bingo
+  description: "Create sharable work bingo game."
+  static: true
+  name: development
+
+test:
+  <<: *common_settings
+  name: test
+
+production:
+  <<: *common_settings
+  name: production
