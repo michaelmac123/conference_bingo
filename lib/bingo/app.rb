@@ -45,7 +45,7 @@ module Sinapp
       js_compression :jsmin
       css_compression :sass
 
-      serve '/img', from: 'assets/images'
+      # serve '/img', from: 'assets/images'
     end
 
     # Simple helpers
